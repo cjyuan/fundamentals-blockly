@@ -15,6 +15,9 @@ When creating a new element, we can immediately set its attributes and text cont
 We can also add another element inside a newly created element.
 In this example, the program adds an `<a>` element inside the second `<li>` element.
 
+Please note that inside a **`create a new ... element`** block, the newly created element is considered the selected element. As a result, in this example, the `<a>` element is created inside the second `<li>` element (and not 
+inside the `<ul>` element). 
+
 
 ### Conceptual View
 The blockly program changes
