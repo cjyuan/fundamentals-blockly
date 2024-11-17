@@ -1,5 +1,11 @@
 ##  Arrays: Mad lib revisited
 
+### Preparation ###
+You may want to study the following example to prepare for this exercise.
+- <a href="../examples.html#example_array_basics" target=_blank>Array basics</a>
+
+---
+
 In the first Mad Libs exercise, we were unable to make our own list of words. We could only pick a category (noun, adjective, verb).
 We will now introduce a data structure called an **array**. An array represents a list of data, often numbers or text.
 

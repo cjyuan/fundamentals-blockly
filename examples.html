@@ -259,9 +259,48 @@
       <div class="instructions">
         <zero-md src="examples/array_basics.md"
           start_code=
-          "('j!('blocks!('languageVersion!0~blocks!%5B('type!'on_start%7F2CNO)W-.13%2CG1ezsGlQ%7D'~x!20~y!38%26TEXT1!'at%20the%20start%20%7Bwhen%20run%20is%20clicked%7D')%C2%80HANDLER6variables_set%7FUa%24a5uCuxba_3lLCD*zr'%26VAR!('%22)%C2%80VALUE6lists_create_with%7F7giTF%3A%5BYx%7DE%7Dt2%7Djfz1S'~extraState!('itemCount!3)%C2%80ADD06text%7FSJ%5D%5E39et%7Cy%3Bgfii-jFAq'%26TEXT!'Apple')))~ADD16text%7F%3DLrWE%60o3%23t3K%2Ft1Idwz.'%26TEXT!'Banana')))~ADD26text%7FA0p%3A3xV_yB%2F%3DcVpViolp'%26TEXT!'Peach')))))))~next6with_element_by_id%7FNZ-8M'%3AD%7Cqkcu%3BI%40R%5E%2B%2C'%7B'%26ID!'random')%C2%80STACK6set_content%7FMeMtZGzwdKp%24SeU%7CGf%2B)'%C2%80VALUE!('shadow!('type!'text%7F%2C'feyW%2BJ20ijD%7B5uMsJwH'%26TEXT!''))~block!('type!'get_randomMember%7F%3D%3DD'%3Av%2FV4ur%2F%24VwY%3F9b59'%C2%80ARRAY6variables_get%7F%2C'iN%3A%5E(%25PgtTytr%23xI7(s'%26VAR!('%22))))))))))))))))%5D)~variables!%5B('name!'num1%7FDJ3%2B0hsEH%7DrCb%25AF%3DKM%7B')%2C('name!'num2%7F%3B0oB%7C%7BnA%2C)7h(%5DQ25N%7Bp')%2C('name!'fruits'~%22%2C('name!'array%7FqVr%25%2Bc%7Bq45Jc%23F%3D0%2C'9h5')%5D)~h!'%3Cdiv%20id%3D%5C'random%5C'%3E%3C%2Fdiv%3E%5Cn%5Cn%5Cn%5Cn')6!('block!('type!'%22id!'%2CAlz4%2Bd)h(kbj5*jWM%23f')%26~fields!('%7F'~id!'%C2%80~inputs!('%01%C2%80%7F%26%226_"
+          "('j!('blocks!('languageVersion!0~blocks!%5B('type!'on_start'~id!'2CNO)W-.13%2CG1ezsGlQ%7D'~x!20~y!38%26TEXT1!'at%20the%20start%20%7Bwhen%20run%20is%20clicked%7D')%7FHANDLER6variables_set'~id!'Ua%24a5uCuxba_3lLCD*zr'%26VAR!('%22)%7FVALUE6lists_create_with'~id!'7giTF%3A%5BYx%7DE%7Dt2%7Djfz1S'~extraState!('itemCount!3)%7FADD06text'~id!'SJ%5D%5E39et%7Cy%3Bgfii-jFAq'%26TEXT!'Apple')))~ADD16text'~id!'%3DLrWE%60o3%23t3K%2Ft1Idwz.'%26TEXT!'Banana')))~ADD26text'~id!'A0p%3A3xV_yB%2F%3DcVpViolp'%26TEXT!'Peach')))))))~next6with_element_by_id'~id!'NZ-8M'%3AD%7Cqkcu%3BI%40R%5E%2B%2C'%7B'%26ID!'random')%7FSTACK6set_content'~id!'MeMtZGzwdKp%24SeU%7CGf%2B)'%7FVALUE!('shadow!('type!'text'~id!'%2C'feyW%2BJ20ijD%7B5uMsJwH'%26TEXT!''))~block!('type!'get_randomMember'~id!'%3D%3DD'%3Av%2FV4ur%2F%24VwY%3F9b59'%7FARRAY6variables_get'~id!'%2C'iN%3A%5E(%25PgtTytr%23xI7(s'%26VAR!('%22))))))))))))))))%5D)~variables!%5B('name!'fruits'~%22%2C('name!'array'~id!'qVr%25%2Bc%7Bq45Jc%23F%3D0%2C'9h5')%5D)~h!'%3Cdiv%20id%3D%5C'random%5C'%3E%3C%2Fdiv%3E%5Cn%5Cn%5Cn%5Cn')6!('block!('type!'%22id!'%2CAlz4%2Bd)h(kbj5*jWM%23f')%26~fields!('%7F~inputs!('%01%7F%26%226_"          
         ></zero-md>
       </div>
+      <xml class="toolbox" style="display: none">
+        <category name="Values" colour='%{BKY_TEXTS_HUE}'>
+          <block type="math_number"></block>          
+          <block type="text"></block>
+          <block type="colour_picker"></block>          
+          <block type="get_randomWord"></block>
+        </category>
+        <category name="Html" colour="%{BKY_COLOUR_HUE}">
+          <block type="on_start"></block>
+          <block type="element_clicked"></block>          
+          <block type="with_element_by_id"></block>
+          <block type="set_content">
+            <value name="VALUE">
+              <shadow type="text"> </shadow>
+            </value>
+          </block>
+          <block type="set_attribute"></block>
+          <block type="add_element"></block>
+          <block type="remove_contents"></block>
+          <block type="get_input_data_with_id"></block>          
+        </category>
+        <category name="Variables" colour="330" custom="VARIABLE"></category>
+        <category name="Arrays" colour="%{BKY_LISTS_HUE}"" >
+          <block type="variables_set">
+            <field name="VAR">array</field>
+            <value name="VALUE">
+              <block type="lists_create_with">
+              </block>
+            </value>
+          </block>
+          <block type="get_randomMember">
+            <value name="ARRAY">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>
+        </category>        
+      </xml>
     </div>
 
     <div class="exercise" id="example_array_add_remove_item">
@@ -272,6 +311,59 @@
           "('j!('blocks!('languageVersion!0~blocks!%5B('type!'on_start'~id!'2CNO)W-.13%2CG1ezsGlQ%7D'~x!25~y!13%7FTEXT1!'at%20the%20start%20%7Bwhen%20run%20is%20clicked%7D')~inputs!('HANDLER%22variables_set'~id!'Ua%24a5uCuxba_3lLCD*zr%26%C2%80%22lists_create_with'~id!'7giTF%3A%5BYx%7DE%7Dt2%7Djfz1S'~extraState!('itemCount!3)~inputs!('ADD0%C2%83SJ%5D%5E39et%7Cy%3Bgfii-jFAq%C2%84Apple')))~ADD1%C2%83%3DLrWE%60o3%23t3K%2Ft1Idwz.%C2%84Banana')))~ADD2%C2%83A0p%3A3xV_yB%2F%3DcVpViolp%C2%84Peach')))))))~next%22arrays_getFirst'~id!'G%3DPBP6o%7CN13J%7D(MqBN%7D6'~extraState!('isStatement!true)%7FMODE!'REMOVE'~WHERE!'FIRST')%C2%80%22%C2%81pV8%7Cg%3DtE%24lAPy%23t8%5EP77%26)))~next%22arrays_push'~id!'1_8%2Cs%3F%2FEt%7C(%2F%7BO3gUAhE'%7FWHERE!'END')%C2%80%C2%83U_NQp%7B%7Cmn38U%2Cwei5nk)%C2%84Orange')))~LIST%22%C2%816%3A%40mrkyOU'%3A%25%23QTNJ%23%5B%7C0%26)))~next%22with_element_by_id'~id!'J%7Dqv%5BHy%3A%5E85eZtmAZ%3D%23G'%7FID!'array')~inputs!('STACK%22set_content'~id!'%60HpgZsnjOpew1OP%7D%23'%3A9f'%C2%80!('shadow!('type!'text'~id!'%2C'feyW%2BJ20ijD%7B5uMsJwH%C2%84'))~block!('type!'%C2%817c3iOz_8Ear%2Bq0WfH(O%60%26))))))))))))))))%5D)~variables!%5B('name!'fruits'~%C2%82%2C('name!'array'~id!'nHIa.ZVF%23f%7C%3DDY8s8UN5')%5D)~h!'Array%20content%20%7Bas%20text%7D%3A%5Cn%3Cspan%20id%3D%5C'array%5C'%3E%3C%2Fspan%3E%5Cn%5Cn%5Cn')%22!('block!('type!'%26'%7FVAR!('%C2%82)%7F~fields!('%C2%80~inputs!('VALUE%C2%81variables_get'~id!'%C2%82id!'%2CAlz4%2Bd)h(kbj5*jWM%23f')%C2%83%22text'~id!'%C2%84'%7FTEXT!'%01%C2%84%C2%83%C2%82%C2%81%C2%80%7F%26%22_"
         ></zero-md>
       </div>
+      <xml class="toolbox" style="display: none">
+        <category name="Values" colour='%{BKY_TEXTS_HUE}'>
+          <block type="math_number"></block>          
+          <block type="text"></block>
+          <block type="colour_picker"></block>          
+          <block type="get_randomWord"></block>
+        </category>
+        <category name="Html" colour="%{BKY_COLOUR_HUE}">
+          <block type="on_start"></block>
+          <block type="element_clicked"></block>          
+          <block type="with_element_by_id"></block>
+          <block type="set_content">
+            <value name="VALUE">
+              <shadow type="text"> </shadow>
+            </value>
+          </block>
+          <block type="set_attribute"></block>
+          <block type="add_element"></block>
+          <block type="remove_contents"></block>
+          <block type="get_input_data_with_id"></block>          
+        </category>
+        <category name="Variables" colour="330" custom="VARIABLE"></category>
+        <category name="Arrays" colour="%{BKY_LISTS_HUE}"" >
+          <block type="variables_set">
+            <field name="VAR">array</field>
+            <value name="VALUE">
+              <block type="lists_create_with">
+              </block>
+            </value>
+          </block>
+          <block type="arrays_getFirst">
+            <value name="VALUE">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>
+          <block type="arrays_push">
+            <value name="LIST">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>          
+          <block type="get_randomMember">
+            <value name="ARRAY">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>
+        </category>        
+      </xml>      
     </div>
 
     <div class="exercise" id="example_array_processing_items">
@@ -282,6 +374,68 @@
           "('j!('blocks!('languageVersion!0~blocks!%5B('type!'on_start'~id!'2CNO)W-.13%2CG1ezsGlQ%7D'~x!18~y!5~fields!('TEXT1!'at%20the%20start%20%7Bwhen%20run%20is%20clicked%7D'%C2%81HANDLER%22variables_set'~id!'Ua%24a5uCuxba_3lLCD*zr%26VAR!('%C2%80%C2%81VALUE%22lists_create_with'~id!'7giTF%3A%5BYx%7DE%7Dt2%7Djfz1S'~extraState!('itemCount!3%C2%81ADD0%C2%82SJ%5D%5E39et%7Cy%3Bgfii-jFAq%26TEXT!'Apple')))~ADD1%C2%82%3DLrWE%60o3%23t3K%2Ft1Idwz.%26TEXT!'Banana')))~ADD2%C2%82A0p%3A3xV_yB%2F%3DcVpViolp%26TEXT!'Peach')))))))~next%22with_element_by_id'~id!'qRGC%2CH6sk.h%2C'6C%24%2Fvb2_%26ID!'list'%C2%81STACK%22arrays_forEach'~id!'vqm8GNYM%5E)%7D9yJj1)PP8%26VAR!('%7F%C2%81LIST%22%C2%83%5B%3ALTEQJQ%5DBju(uehw%24*b%26VAR!('%C2%80)))~DO%22add_element'~id!'Si*%2B%3AShx8l%2C%60%3AatNb%5DJg%26ELEMENT!'li'%C2%81STACK%22set_content'~id!'%3Fki(S%2CfUBtccCs%2C'8VjFI'~inputs!('VALUE!('shadow!('type!'text'~id!'UzmLlmUOw3%7Cp%60p%5B%25u%3Fa7%26TEXT!''))~block!('type!'%C2%83oLYY3'%3A44ZNL%3B8OoT%3FpX%40%26VAR!('%7F)))))))))))))))))))%5D)~variables!%5B('name!'fruits'~%C2%80%2C('name!'array'~id!'nHIa.ZVF%23f%7C%3DDY8s8UN5')%2C('name!'item'~%7F%5D)~h!'%3Cul%20id%3D%5C'list%5C'%3E%3C%2Ful%3E%5Cn%5Cn%5Cn%5Cn')%22!('block!('type!'%26'~fields!('%7Fid!'bkbmfA)02%3ABg%3D%2Ct%7DmVE(')%C2%80id!'%2CAlz4%2Bd)h(kbj5*jWM%23f')%C2%81)~inputs!('%C2%82%22text'~id!'%C2%83variables_get'~id!'%01%C2%83%C2%82%C2%81%C2%80%7F%26%22_"
         ></zero-md>
       </div>
+      <xml class="toolbox" style="display: none">
+        <category name="Values" colour='%{BKY_TEXTS_HUE}'>
+          <block type="math_number"></block>          
+          <block type="text"></block>
+          <block type="colour_picker"></block>          
+          <block type="get_randomWord"></block>
+        </category>
+        <category name="Html" colour="%{BKY_COLOUR_HUE}">
+          <block type="on_start"></block>
+          <block type="element_clicked"></block>          
+          <block type="with_element_by_id"></block>
+          <block type="set_content">
+            <value name="VALUE">
+              <shadow type="text"> </shadow>
+            </value>
+          </block>
+          <block type="set_attribute"></block>
+          <block type="add_element"></block>
+          <block type="remove_contents"></block>
+          <block type="get_input_data_with_id"></block>          
+        </category>
+        <category name="Variables" colour="330" custom="VARIABLE"></category>
+        <category name="Arrays" colour="%{BKY_LISTS_HUE}"" >
+          <block type="variables_set">
+            <field name="VAR">array</field>
+            <value name="VALUE">
+              <block type="lists_create_with">
+              </block>
+            </value>
+          </block>
+          <block type="arrays_getFirst">
+            <value name="VALUE">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>
+          <block type="arrays_push">
+            <value name="LIST">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>
+          <block type="arrays_forEach">
+            <field name="VAR">item</field>
+            </value>
+            <value name="LIST">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>          
+          <block type="get_randomMember">
+            <value name="ARRAY">
+              <block type="variables_get">
+                  <field name="VAR">array</field>
+              </block>
+            </value>
+          </block>
+        </category>        
+      </xml>            
     </div>
 
     <div class="exercise" id="example_if_else">
@@ -292,6 +446,35 @@
         "('j!('blocks!('languageVersion!0~blocks!%5B('type!'element_clicked'~id!'Orij%25O%7C%7D%252vU%3FD%7DVx2%5EZ'~x!24~y!16~fields!('TEXT1!'when%20the%20element%20with%20id'~ID!'button'~TEXT2!'is%20clicked')%C2%85HANDLER%C2%81%2C%7BR8%3B%5EW%60mZ%5DC-%7D%5EeBx)-%C2%86%C2%85VALUE%22get_input_data_with_id'~id!'JOk4lL%3F*o%3F1VNw%3AdIY6*%7FTYPE!'number'~ID!'num'))))~next%22controls_if'~id!'5i3C%7DDtaVqJSaG%7CGA%7Cf6'~extraState!('elseIfCount!1~hasElse!true)%C2%85IF0%C2%88zs%24d_%23LiW%7CxPNTh%7BoQu-%7FOP!'G%C2%84'cVX7%40EXn%3D8zKt4bzCthm%C2%86%C2%87BLcH.9%7BG%5B6J-Ow%7CBeKCs%7FNUM!0))))))~DO0%C2%81d)%2C')U0%7B599d%5Dc9v%7D%3Ac7L%26%C2%82%5B'%3ABXD%2C'%5Exv%2F5uE7fbVD%23j%7FTEXT!'Positive'))))))~IF1%C2%88dQ0%40X-F%2C'xRL%25r.%2CjwDpQ%7FOP!'L%C2%84'S%7D%3DTWa78P.)Lu%239KQpk%3A%C2%86%C2%87%2B%5BY%40dy%5D27_kg6F%7B%2F%7Bu3-%7FNUM!0))))))~DO1%C2%81Htc%5DaL4M77DDgb%2CXwI1S%26%C2%82%2C'on%2By%2C'KUO0aPBb5ui%2C'U%3F%7FTEXT!'Negative'))))))~ELSE%C2%81%7C_BF1g7e%2C'%24%7CvCtkM7b%40Q%26%C2%82%2CcN4(KL%2C'Q%23Hm7%5DP%25F7%249%7FTEXT!'Zero')))))))~next%22with_element_by_id'~id!'U%24HscTvl9xN%25FBsq7g%5B.%7FID!'numberType')%C2%85STACK%22set_content'~id!'%3BR3%40%5Bk'%3AjzRo%2BpOqAXkgh'%C2%85VALUE!('shadow!('type!'text'~id!'o6OWnZEAPg15UuLGZkl%2B%7FTEXT!'Hello%2C%20'))~block!('type!'variables_get'~id!'%23rnd42foTOq(577Jw%5DR6%26))))))))))))))%5D)~variables!%5B('name!'num'~%C2%80%2C('name!'numberType'~%C2%83%5D)~h!'%3Cinput%20id%3D%5C'num%5C'%20type%3D%5C'number%5C'%3E%5Cn%3Cspan%20id%3D%5C'numberType%5C'%3E%3C%2Fspan%3E%5Cn%3Chr%3E%5Cn%3Cbutton%20id%3D%5C'button%5C'%3ECheck%3C%2Fbutton%3E%5Cn%5Cn%5Cn%5Cn')%22!('block!('type!'%26%7FVAR!('%C2%83)%7F'~fields!('%C2%80id!'DJ3%2B0hsEH%7DrCb%25AF%3DKM%7B')%C2%81%22variables_set'~id!'%C2%82%C2%85VALUE%22text'~id!'%C2%83id!'%3B0oB%7C%7BnA%2C)7h(%5DQ25N%7Bp')%C2%84T')%C2%85A%22variables_get'~id!%C2%85~inputs!('%C2%86%7FVAR!('%C2%80)%C2%87))~B%22math_number'~id!'%C2%88%22logic_compare'~id!'%01%C2%88%C2%87%C2%86%C2%85%C2%84%C2%83%C2%82%C2%81%C2%80%7F%26%22_"
       ></zero-md>
       </div>
+      <xml class="toolbox" style="display: none">
+        <category name="Logic" colour="210">
+          <block type="controls_if"></block>
+          <block type="logic_negate"></block>
+          <block type="logic_compare"></block>
+        </category>        
+        <category name="Values" colour='%{BKY_TEXTS_HUE}'>
+          <block type="math_number"></block>          
+          <block type="text"></block>
+          <block type="colour_picker"></block>
+          <block type="logic_boolean"></block>          
+          <block type="get_randomWord"></block>
+        </category>
+        <category name="Html" colour="%{BKY_COLOUR_HUE}">
+          <block type="on_start"></block>
+          <block type="element_clicked"></block>          
+          <block type="with_element_by_id"></block>
+          <block type="set_content">
+            <value name="VALUE">
+              <shadow type="text"> </shadow>
+            </value>
+          </block>
+          <block type="set_attribute"></block>
+          <block type="add_element"></block>
+          <block type="remove_contents"></block>
+          <block type="get_input_data_with_id"></block>          
+        </category>
+        <category name="Variables" colour="330" custom="VARIABLE"></category>
+      </xml>       
     </div>
 
 

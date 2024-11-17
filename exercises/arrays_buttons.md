@@ -1,5 +1,10 @@
 ## Arrays and buttons
 
+### Preparation ###
+You may want to study the following example to prepare for this exercise.
+- <a href="../examples.html#example_if_else" target=_blank>Using an "if" block to check whether a number is positive, negative, or zero</a>
+
+---
 
 One of the most common things we do with an array is loop through all its items, performing a task each time. Sometimes, a loop doesn't do what we need, for example, if we wanted to make the list of fruit appear gradually.
 

@@ -24,5 +24,6 @@ The program performs the following two operations to array `fruits`:
   - removes its first item 
   - add "Orange" to the end of the array
 
-The program then displays the content of the array as text. This is a convenient way 
-to visualise the content in an array.
+The program then displays the content of the resulting array as text, providing
+a convenient way to visualise the data stored in the array.
+To display array items in an HTML list one by one, please refer to the next example.

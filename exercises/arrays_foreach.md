@@ -1,5 +1,11 @@
 ## Arrays and loops
 
+### Preparation ###
+You may want to study the following examples to prepare for this exercise.
+- <a href="../examples.html#example_array_add_remove_item" target=_blank>Adding/removing items to/from an array</a>
+- <a href="../examples.html#example_array_processing_items" target=_blank>Processing array items one by one</a>
+
+---
 
 In this series of exercises, we have so far used one `create a new ... element` for each `<li>` we want to create.
 

@@ -2,7 +2,6 @@
 
 This example demonstrates how to use a loop to iterate through the items in an array one by one. 
 
-
 ### The blocks 
 
 - **`for each item [item] in array {<array variable>}`**
@@ -23,4 +22,20 @@ the array items one by one:
 `<li>Banana</li>` to the selected list.
 - In the third iteration, `item` takes the value "Peach", so the program add
 `<li>Peach</li>` to the selected list.
+
+
+Conceptually, the program changes
+```
+<ul id="list"></ul>
+```
+to
+```
+<ul id="list">
+<li>Apple</li>
+<li>Banana</li>
+<li>Peach</li>
+</ul>
+```
+
+
 
